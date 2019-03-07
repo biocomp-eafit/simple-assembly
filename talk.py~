@@ -1,0 +1,12 @@
+def L_spectrum(seq, L):
+    spectrum = []
+    printable = ['' for i in range(L)]
+    for i in range(len(seq) - L + 1):
+        printable[i%L] += seq[i:i+L]
+        spectrum.append(seq[i:i+L])
+
+    for i, v in enumerate(printable):
+        print(' ' * i + v)
+    
+    print(seq)
+    return spectrum

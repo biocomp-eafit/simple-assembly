@@ -14,7 +14,7 @@ def run(input_fasta, output_file, kmer_length,
 
     dbg = DeBruijnGraph(seq_dict, int(kmer_length))
 
-    visualize_graph(dbg.G)
+    #visualize_graph(dbg.G)
 
     assembly = eulerian_random_walk(dbg)
 
