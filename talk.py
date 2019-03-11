@@ -21,7 +21,7 @@ def visualize_graph(graph):
 
 def euler_path(graph):
     g = graph.copy()
-    v = seed
+    v = 'ATAG'
     while g.size() > 0:
         n = v
         nbrs = sorted([v for u, v in g.edges(n)])
